@@ -20,23 +20,6 @@ import { kelvinToFar } from './kelvinToFar.pipe'
  * 
  * http://api.openweathermap.org/data/2.5/weather?lat=43.074237&lon=-89.381012&appid=0e38782cb130140be30552ed6f3ed8db
  * 
- * 
- * function getData() {
-fetch('http://api.openweathermap.org/data/2.5/weather?lat=43.074237&lon=-89.381012&appid=0e38782cb130140be30552ed6f3ed8db')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(myJson);
-  });
-  }
- * 
- * 
- * kelving temp conversion is  T(k) * 9/5 - 459.67
- * 
- * 
- * 
- * 
  */
 
 

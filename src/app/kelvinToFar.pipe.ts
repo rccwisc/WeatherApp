@@ -11,6 +11,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'kelvinToFar'})
 export class kelvinToFar implements PipeTransform {
   transform(value: number): number {
-    return value * 9/5 - 459.67;
+    let x : number
+    x =  value * 9/5 - 459.67;
+    return  Number(x.toPrecision(3));  
   }
 }

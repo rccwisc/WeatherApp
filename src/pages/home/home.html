@@ -7,9 +7,10 @@
 </ion-header>
 
 <ion-content padding>
-  Current Condtions &nbsp; current temp  {{wet?.temp | kelvinToFar | number: '2.0-0' }} <ion-icon name="thermometer"></ion-icon>
-    minimumm for today  &nbsp; {{wet?.temp_min  | kelvinToFar | number: '2.0-0'}} <ion-icon name="thermometer"></ion-icon>
-  &nbsp;  maximum for today &nbsp; {{wet?.temp_max | kelvinToFar | number: '2.0-0' }}  <ion-icon name="thermometer"></ion-icon> 
-  &nbsp; current conditions: {{wet?.description}}
+
+  <p> current temp  {{wet?.temp | kelvinToFar }} <ion-icon name="thermometer"></ion-icon> </p>
+  <p>minimumm for today  &nbsp; {{wet?.temp_min  | kelvinToFar }} <ion-icon class="low-temp" name="thermometer"></ion-icon></p>
+  <p> maximum for today &nbsp; {{wet?.temp_max | kelvinToFar }}  <ion-icon class="high-temp" name="thermometer"></ion-icon> </p>
+  <p> current conditions: {{wet?.description}} </p>
 
 </ion-content>
