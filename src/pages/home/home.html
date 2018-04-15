@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{someTitle}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Current Condtions &nbsp; current temp  {{wet?.temp | kelvinToFar | number: '2.0-0' }} <ion-icon name="thermometer"></ion-icon>
+    minimumm for today  &nbsp; {{wet?.temp_min  | kelvinToFar | number: '2.0-0'}} <ion-icon name="thermometer"></ion-icon>
+  &nbsp;  maximum for today &nbsp; {{wet?.temp_max | kelvinToFar | number: '2.0-0' }}  <ion-icon name="thermometer"></ion-icon> 
+  &nbsp; current conditions: {{wet?.description}}
+
+</ion-content>
