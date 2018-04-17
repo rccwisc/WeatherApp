@@ -9,7 +9,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { WeatherService } from './weather.service';
-import { weather } from './weather'
 import { kelvinToFar } from './kelvinToFar.pipe'
 
 /** key is  0e38782cb130140be30552ed6f3ed8db 
